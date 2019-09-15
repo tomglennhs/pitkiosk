@@ -1,0 +1,32 @@
+.ghs-navy {
+    background-color: #091f3f;
+}
+
+.ghs-orange {
+    background-color: #ef4b24;
+}
+
+.gb-slate {
+    background-color: #2b354a;
+}
+
+.text-white
+{
+    color: white;
+}
+
+.ghs-center {
+    text-align: center;
+}
+
+.ghs-hover:hover {
+    background-color: #2b354a
+}
+
+.ghs-50vh {
+    height: 50vh;
+}
+
+.ghs-25vh {
+    height: 25vh;
+}
