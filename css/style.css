@@ -1,0 +1,99 @@
+@keyframes hoverAnimation {
+    0% {background-color: #2b354a;}
+    50% {background-color: #091f3f;}
+    100% {background-color: #2b354a;}
+  }
+
+@keyframes bodyAnimation {
+    0% {background-color: #2b354a;}
+    33% {background-color: #091f3f;}
+    66% {background-color: #ef4b24;}
+    100% {background-color: #2b354a;}
+  } 
+
+.ghs-navy {
+    background-color: #091f3f;
+}
+
+.ghs-orange {
+    background-color: #ef4b24;
+}
+
+.gb-slate {
+    background-color: #2b354a;
+}
+
+.text-white
+{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ghs-center {
+    text-align: center;
+}
+
+.ghs-hover:hover {
+    /* background-color: #091f3f */
+    animation-name: hoverAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.ghs-45vh {
+    height: 45vh;
+}
+
+.ghs-25vh {
+    min-height: 25vh;
+    max-height:25vh;
+}
+
+.ghs-menuparent {
+    display: table;
+}
+
+.ghs-menuchild {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ghs-br {
+        display: block; /* makes it have a width */
+        content: ""; /* clears default height */
+        margin-top: calc(20vh/3); /* change this to whatever height you want it */
+}
+
+.ghs-bodyAni {
+    animation-name: bodyAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.ghs-5vh {
+    height: 5vh;
+}
+
+a.divLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+}
+
+.ghs-br2 {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: calc(2vh/4); /* change this to whatever height you want it */
+}
