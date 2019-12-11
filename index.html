@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
 
     <!-- Colors: Glenn Navy: #091f3f | Glenn Orange: #ef4b24 | Grizzly Bots Slate Blue: #2b354a -->
-    
+
     <!-- Bootstrap :) -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
 
     <!-- Custom CSS-->
     <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -15,109 +17,163 @@
     <link type="text/css" rel="stylesheet" href="css/all.css">
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Grizzly Bots PIT</title>
 
-  </head>
+</head>
 
-  <body class="ghs-bodyAni">
-      <div class="container-fluid align-items-center">
+<body class="ghs-bodyAni">
+    <div class="container-fluid align-items-center">
         <div class="row ghs-45vh text-white align-items-center">
-                <div class="col-1">
-                        
-                </div>
-                <div class="col-5 ghs-center">
-                    <h1>Welcome to the Grizzly Bots PIT!</h1>
-                    <h2>Thank you for stopping by! While you’re here, why don’t you try some of these activities?</h2>
+            <div class="col-1">
+
+            </div>
+            <div class="col-5 ghs-center">
+                <h1>Welcome to the Grizzly Bots PIT!</h1>
+                <h2>Thank you for stopping by! While you’re here, why don’t you try some of these activities?</h2>
             </div>
             <div class="col-5 ghs-center">
                 <img class="image-fluid" src="images/logo2.png">
             </div>
             <div class="col-1">
-        </div>
+            </div>
             <hr>
         </div>
         <div class="row text-white align-items-center">
 
             <div class="col-4 ghs-25vh ghs-center ghs-hover border-right border-top">
-                    
-                        <br class="ghs-br">
-                        <i class="fas fa-book h3"></i>
-                        <h3>Read the EN</h3>
-                        <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
+
+                <br class="ghs-br">
+                <i class="fas fa-book h3"></i>
+                <h3>Read the EN</h3>
+                <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
+            </div>
+
+
+            <div class="col-4 ghs-25vh ghs-center ghs-hover border-right border-top">
+                <br class="ghs-br">
+                <i class="fas fa-users h3"></i>
+                <h3>Read about the team</h3>
+                <a class="divLink" href="" data-toggle="modal" data-target="#aboutModal"></a>
+            </div>
+
+
+            <div class="col-4 ghs-25vh ghs-center ghs-hover border-right border-top">
+                <br class="ghs-br">
+                <i class="fas fa-laptop-code h3"></i>
+                <h3>Get an intro to software</h3>
+                <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
+            </div>
+
+
+        </div>
+        <div class="row text-white">
+
+
+            <div class="col ghs-25vh ghs-center ghs-hover border-right border-top border-bottom">
+                <br class="ghs-br">
+                <i class="far fa-arrow-alt-circle-right h3"></i>
+                <h3>Go to our website</h3>
+                <a class="divLink" href="https://sites.google.com/k12.leanderisd.org/grizzlybots/home"></a>
+            </div>
+
+
+            <div class="col ghs-25vh ghs-center ghs-hover border-right border-top border-bottom">
+                <br class="ghs-br">
+                <i class="fas fa-code-branch h3"></i>
+                <h3>Suggest a change to this kiosk</h3>
+                <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
+            </div>
+
+
+            <div class="col ghs-25vh ghs-center ghs-hover border-right border-top border-bottom">
+                <br class="ghs-br">
+                <i class="far fa-address-book h3"></i>
+                <h3>Get team contact info</h3>
+                <a class="divLink" href="" data-toggle="modal" data-target="#contactModal"></a>
+            </div>
+
+
+            <div class="col ghs-25vh ghs-center ghs-hover border-right border-top border-bottom">
+                <br class="ghs-br">
+                <i class="far fa-file-code h3"></i>
+                <h3>View this kiosk's source code</h3>
+                <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
+            </div>
+        </div>
+
+        <div class="row text-white">
+            <div class="col ghs-center ghs-5vh">
+                <br class="ghs-br2">
+                <p>Grizzly Bots 11918 - Glenn High School</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- The Modal -->
+    <div class="modal fade" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Grizzly Bots 11918</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-        
-        
-                <div class="col-4 ghs-25vh ghs-center ghs-hover border-right border-top">
-                        <br class="ghs-br">
-                        <i class="fas fa-users h3"></i>
-                        <h3>Read about the team</h3>
-                        <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h5>Email: ftcgrizzlybots@gmail.com</h5>
+                    <h5>Website: bit.ly/grizzlybots</h5>
                 </div>
-        
-        
-                <div class="col-4 ghs-25vh ghs-center ghs-hover border-right border-top">
-                        <br class="ghs-br">
-                        <i class="fas fa-laptop-code h3"></i>
-                        <h3>Get an intro to software</h3>
-                        <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
-        
 
             </div>
-            <div class="row text-white">
-
-                
-                    <div class="col ghs-25vh ghs-center ghs-hover border-right border-top border-bottom">
-                        <br class="ghs-br">
-                        <i class="far fa-arrow-alt-circle-right h3"></i>    
-                        <h3>Go to our website</h3>
-                        <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
-                    </div>
-                
-                
-                    <div class="col ghs-25vh ghs-center ghs-hover border-right border-top border-bottom">
-                        <br class="ghs-br">
-                        <i class="fas fa-code-branch h3"></i>    
-                        <h3>Suggest a change to this kiosk</h3>
-                        <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
-                    </div>
-                
-                
-                    <div class="col ghs-25vh ghs-center ghs-hover border-right border-top border-bottom">
-                        <br class="ghs-br">
-                        <i class="far fa-address-book h3"></i>    
-                        <h3>Get team contact info</h3>
-                        <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
-                    </div>
-                
-                
-                    <div class="col ghs-25vh ghs-center ghs-hover border-right border-top border-bottom">
-                        <br class="ghs-br">        
-                        <i class="far fa-file-code h3"></i>
-                        <h3>View this kiosk's source code</h3>
-                                <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
-                        </div>
-                    </div>
-
-                    <div class="row text-white">
-                        <div class="col ghs-center ghs-5vh">
-                                <br class="ghs-br2">
-                            <p>Grizzly Bots 11918 - Glenn High School</p>
-                        </div>
-                    </div>
+        </div>
     </div>
-</div>
+    <div class="modal fade" id="aboutModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">About Us</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h6>Hi!</h5>
+                    <p>We are the Grizzly Bots. We are based in Leander, TX. We’re located in Leander, TX and we are Tom Glenn HS' FTC robotics team.</p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
 
     <!-- SCRIPTS-->
-       
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
     <!-- SCRIPTS END -->
 
 </body>
+
 </html>
-      
