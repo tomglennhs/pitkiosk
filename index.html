@@ -6,8 +6,8 @@
     <!-- Colors: Glenn Navy: #091f3f | Glenn Orange: #ef4b24 | Grizzly Bots Slate Blue: #2b354a -->
 
     <!-- Bootstrap :) -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom CSS-->
     <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -21,6 +21,8 @@
 
     <title>Grizzly Bots PIT</title>
 
+    
+
 </head>
 
 <body class="ghs-bodyAni">
@@ -32,6 +34,7 @@
             <div class="col-5 ghs-center">
                 <h1>Welcome to the Grizzly Bots PIT!</h1>
                 <h2>Thank you for stopping by! While you’re here, why don’t you try some of these activities?</h2>
+                <p id="indicator">Internet is!</p>
             </div>
             <div class="col-5 ghs-center">
                 <img class="image-fluid" src="images/logo2.png">
@@ -110,7 +113,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- The Modal -->
     <div class="modal fade" id="contactModal">
         <div class="modal-dialog">
@@ -149,7 +152,8 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <h6>Hi!</h5>
-                    <p>We are the Grizzly Bots. We are based in Leander, TX. We’re located in Leander, TX and we are Tom Glenn HS' FTC robotics team.</p>
+                        <p>We are the Grizzly Bots. We are based in Leander, TX. We’re located in Leander, TX and we are
+                            Tom Glenn HS' FTC robotics team.</p>
                 </div>
 
                 <!-- Modal footer -->
@@ -165,12 +169,35 @@
 
     <!-- SCRIPTS-->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+        <script>
+            function updateIndicator() {
+                // https://davidwalsh.name/detecting-online
+                // Show a different icon based on offline/online
+                if (navigator.onLine = true)  { // true|false
+                    document.getElementById("indicator").innerHTML = "Internet avaliable!";
+                }
+                if (navigator.onLine = false)  { // true|false
+                    document.getElementById("indicator").innerHTML = "Internet unavaliable";
+                }
+            
+            }
+    
+            // Update the online status icon based on connectivity
+            window.addEventListener('online', updateIndicator);
+            window.addEventListener('offline', updateIndicator);
+            updateIndicator();
+    
+        </script>
 
     <!-- SCRIPTS END -->
 
