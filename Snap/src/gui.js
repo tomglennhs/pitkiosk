@@ -231,10 +231,10 @@ IDE_Morph.prototype.init = function (isAutoFill) {
     this.sprites = new List([this.currentSprite]);
     this.currentCategory = 'motion';
     this.currentTab = 'scripts';
-    this.projectName = '';
+    this.projectName = 'Software Intro';
     this.projectNotes = '';
 
-    this.logoURL = this.resourceURL('src', 'snap_logo_sm.png');
+    this.logoURL = this.resourceURL('src', 'gb-logo.png');
     this.logo = null;
     this.controlBar = null;
     this.categories = null;
@@ -929,6 +929,7 @@ IDE_Morph.prototype.createControlBar = function () {
     cloudButton = button;
     this.controlBar.add(cloudButton);
     this.controlBar.cloudButton = cloudButton; // for menu positioning
+    
 
     this.controlBar.fixLayout = function () {
         x = this.right() - padding;
@@ -9910,3 +9911,5 @@ SoundRecorderDialogMorph.prototype.destroy = function () {
     }
     SoundRecorderDialogMorph.uber.destroy.call(this);
 };
+
+ide.isSmallStage = true;

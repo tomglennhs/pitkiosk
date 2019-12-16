@@ -49,6 +49,16 @@
     max-height:25vh;
 }
 
+.ghs-10vh {
+    min-height: 10vh;
+    max-height: 10vh;
+}
+
+.ghs-85vh {
+    min-height: 85vh;
+    max-height: 85vh;
+}
+
 .ghs-menuparent {
     display: table;
 }
@@ -96,4 +106,20 @@ a.divLink {
     display: block; /* makes it have a width */
     content: ""; /* clears default height */
     margin-top: calc(2vh/4); /* change this to whatever height you want it */
+}
+
+#code-back a{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#ghs-snap-pad {
+    /* padding-left: 1vh;
+    padding-right: 1vh; */
+}
+
+#ghs-snap {
+    width: 99vh;
+    height: 85vh;
+    border: none;
 }
