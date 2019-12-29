@@ -42,6 +42,34 @@
                 <br class="ghs-br">
                 <i class="far fa-arrow-alt-circle-right h3"></i>
                 <h3>Steps:</h3>
+                <p>This is Snap. It looks similar to Scratch, because it kind of is! Snap is a fork of Scratch 1.4 with extended features. We’re going to make a really basic drawing program, but feel free to mess around!
+                    <br> Regardless, you’ll probably want to click the small screen icon so everything can fit. We had issues with embedding Snap, but if you happen to be pretty good with HTML, ask us to pull up the source so you can help us out!
+                    <br> By the end of this, you’ll be able to use your mouse to draw simple pictures.
+                    <br>
+                    <br> 1. First, we need to go to the Control tab, and drag the when green flag clicked block into the scripting area. This will allow us to start our program by clicking the green flag button.
+                    <br> 2. Now we need the code that makes our sprite move. In the control tab, grab the forever loop. This will execute, or run, any code inside of the loop, forever, or at least until it is stopped.
+                    <br> 3. Now we need to go to motion, and look for the go to *blank* block. Put the block into the forever loop. Click on the dropdown, and set it to mouse pointer. This will tell the sprite to repeatedly go to the mouse, making it
+                    look like it is following the mouse.
+                    <br> 4. Press the green flag to test what we’ve done so far. Once you hover over to the stage, you should see that the sprite follows the mouse pointer. If you don’t, make sure your code looks like this. Press the red stop button to
+                    stop your code from running when you are done.
+                    <br> 5. Now, we need to do the drawing part. We’ll use the pen blocks to do this. Go to the pen section, and drag out the pen down block, and place it into the forever loop, like this. Now run your code again.
+                    <br> 6. This works, but there is no way to stop inking, clear the screen, or to change the color of the ink. Let’s work on clearing the screen first.
+                    <br> 7. Drag out the clear block from the pen section. We want to clear the screen once the program has started, but before we start following the mouse and put the pen down, so put the clear block in between the when green flag clicked
+                    block and the forever loop, like this. Now let’s test.
+                    <br> 8. It worked! Now let’s work on only inking when the mouse is pressed down. For this we’ll use a conditional statement. A conditional statement allows you to execute certain code if a condition is met, like the mouse button being
+                    pressed down.
+                    <br> 9. Go to the control tab and look for the if *blank* else block, and drag it out. You probably have to scroll down a bit.
+                    <br> 10. Go to the sensing tab, and look for the mouse down? block, and drag it out. This is a reporter block, meaning it doesn’t actually do anything, it just reports, or returns a value. In this example, it reports true if the mouse
+                    is pressed, and false if it isn’t.
+                    <br> 11. Put the mouse down block into the hexagonal space in the if block. Your code should look like this at this point.
+                    <br> 12. Now, instead of the pen always being down, we only want it to be down when the mouse is clicked, so take the pen down block from the forever loop and put it into the top of conditional block.
+                    <br> 13. This conditional won’t run unless we put it into the forever loop, so move it into to the forever loop, like so. Let’s test.
+                    <br> 14. Hmm. It doesn’t seem to work as it should. This is because we never tell the pen to go up. Go to the pen tab, and drag out the pen up block. Put it underneath the clear block. Add another pen up block underneath the ‘else’
+                    part of the conditional block. Let’s test again.
+                    <br> 15. It still seems not to work properly. But this time, it’s not a problem with our code. On top of the scripting area, is the sprite settings. Uncheck the ‘draggable’ checkbox. Now let’s test again!
+                    <br> 16. It’s working now! The reason it didn’t work on our last test, is that whenever you clicked and dragged, Snap thought you were trying to drag the sprite! Now, it won’t let you drag the sprite.
+                    <br> 17. Congrats! You have a working drawing program! Try to figure out how to change the pen’s color, or make a completely new program.
+                </p>
             </div>
 
 
