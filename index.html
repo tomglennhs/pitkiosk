@@ -6,35 +6,60 @@
     <!-- Colors: Glenn Navy: #091f3f | Glenn Orange: #ef4b24 | Grizzly Bots Slate Blue: #2b354a -->
 
     <!-- Bootstrap :) -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Custom CSS-->
     <link type="text/css" rel="stylesheet" href="css/style.css">
 
     <!-- Font Awesome for icons -->
-    <!-- <script src="https://kit.fontawesome.com/bf18e8af44.js"></script> -->
-    <link type="text/css" rel="stylesheet" href="css/all.css">
+    <link type="text/css" rel="stylesheet" href="css/fontawesome/all.min.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Grizzly Bots PIT</title>
 
-    
+
 
 </head>
 
-<body class="ghs-bodyAni">
-    <div class="container-fluid align-items-center">
+<body class="ghs-bodyAni" onload="showScreensaver(); ghsTyped()">
+    <div class="container-fluid align-items-center" id="ghs-welcome">
+
+        <div class="row ghs-45vh text-white align-items-center">
+
+            <div class="col ghs-center">
+                <h1>Welcome to the Grizzly Bots PIT!</h1>
+                <h3 class="typed"></h3>
+                <br>
+                <button type="button" class="btn btn-secondary" onclick="showContent()">Click here</button>
+            </div>
+
+
+        </div>
+
+        <div class="row ghs-45vh text-white align-items-center">
+
+            <div class="col-12 ghs-center">
+                <img style="width: 45%" class="image-fluid" src="images/logo.png">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid align-items-center" id="ghs-main">
         <div class="row ghs-45vh text-white align-items-center">
             <div class="col-1">
 
             </div>
             <div class="col-5 ghs-center">
                 <h1>Welcome to the Grizzly Bots PIT!</h1>
-                <h2>Thank you for stopping by! While you’re here, why don’t you try some of these activities?</h2>
-                <p id="indicator">Internet is!</p>
+                <h3>While you're here, why not try one of these actvities?</h3>
+                <!-- I realized we can't use internet at meets, so this is pointless 
+                    <p id="indicator">Internet is!</p> 
+                -->
+                <p>If you leave this kiosk inactive for 1 minute, it will automatically refresh and go to the welcome page.
+                </p>
             </div>
             <div class="col-5 ghs-center">
                 <img class="image-fluid" src="images/logo2.png">
@@ -50,7 +75,8 @@
                 <br class="ghs-br">
                 <i class="fas fa-book h3"></i>
                 <h3>Read the EN</h3>
-                <a class="divLink" href="https://github.com/jasonappah/FTC11918-PitKioskDashboard/"></a>
+                <!-- <a class="divLink" href="en.html"></a> -->
+                <a class="divLink" onclick="showEN()" href="#"></a>
             </div>
 
 
@@ -78,7 +104,7 @@
                 <br class="ghs-br">
                 <i class="far fa-arrow-alt-circle-right h3"></i>
                 <h3>Go to our website</h3>
-                <a class="divLink" href="https://sites.google.com/k12.leanderisd.org/grizzlybots/home"></a>
+                <a class="divLink" href="" data-toggle="modal" data-target="#webModal"></a>
             </div>
 
 
@@ -112,7 +138,39 @@
                 <p>Grizzly Bots 11918 - Glenn High School</p>
             </div>
         </div>
+
     </div>
+
+    <div class="container-fluid align-items-center" id="en-pdf">
+        <div class="row">
+            <div class="col ghs-center align-items-center ghs-navy" id="code-back">
+                <a class="btn btn-lg btn-primary" onclick="showContent()" href="#" role="button">Back</a>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row align-items-center ghs-center text-white">
+            <div class="col-2">
+
+            </div>
+
+            <div class="col-8 gb-slate">
+                <iframe width="100%" height=750px src="EN.pdf#toolbar=0"></iframe>
+            </div>
+
+            <div class="col-2">
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
 
     <!-- The Modal -->
     <div class="modal fade" id="contactModal">
@@ -139,6 +197,33 @@
             </div>
         </div>
     </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="webModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Check out our website!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h5>Use your phone or other cellular device to go to bit.ly/grizzlybots, or scan the QR code below! Please don't use Wi-Fi (violation of rule T5).</h5>
+                    <img class="image-fluid" src="images/QR.png">
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="aboutModal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -152,8 +237,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <h6>Hi!</h5>
-                        <p>We are the Grizzly Bots. We are based in Leander, TX. We’re located in Leander, TX and we are
-                            Tom Glenn HS' FTC robotics team.</p>
+                        <p>We are the Grizzly Bots. We are based in Leander, TX. We’re located in Leander, TX and we are Tom Glenn HS' FTC robotics team.</p>
                 </div>
 
                 <!-- Modal footer -->
@@ -165,39 +249,96 @@
         </div>
     </div>
 
-    </div>
+
+
+
+
 
     <!-- SCRIPTS-->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <!-- This function hides the main content and shows the welcome page. -->
+    <script>
+        function showScreensaver() {
+            var x = document.getElementById("ghs-main");
+            var y = document.getElementById("ghs-welcome");
+            var z = document.getElementById("en-pdf");
 
-        <script>
-            function updateIndicator() {
-                // https://davidwalsh.name/detecting-online
-                // Show a different icon based on offline/online
-                if (navigator.onLine = true)  { // true|false
-                    document.getElementById("indicator").innerHTML = "Internet avaliable!";
-                }
-                if (navigator.onLine = false)  { // true|false
-                    document.getElementById("indicator").innerHTML = "Internet unavaliable";
-                }
-            
+            x.style.display = "none";
+            z.style.display = "none";
+            y.style.display = "block";
+
+        }
+
+        function showContent() {
+            var x = document.getElementById("ghs-main");
+            var y = document.getElementById("ghs-welcome");
+            var z = document.getElementById("en-pdf");
+
+            x.style.display = "block";
+            z.style.display = "none";
+            y.style.display = "none";
+            inactivityTime()
+        }
+
+        function showEN() {
+            var x = document.getElementById("ghs-main");
+            var y = document.getElementById("ghs-welcome");
+            var z = document.getElementById("en-pdf");
+
+            x.style.display = "none";
+            z.style.display = "block";
+            y.style.display = "none";
+
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/typed/lib/typed.js"></script>
+
+
+    <!-- This code does the typing animation on the welcome page. -->
+    <script>
+        function ghsTyped() {
+            var options = {
+                strings: ['You can do cool things', '‏‏‎‏‏You can look at the source code', '‎You can learn more about the team'],
+                typeSpeed: 40,
+                backDelay: 1200,
+                loop: true,
+                loopCount: Infinity,
+                smartBackspace: false,
+                typeSpeed: 50,
+                backSpeed: 45,
+                showCursor: false,
+                shuffle: false,
+            };
+            var typed = new Typed('.typed', options);
+
+        }
+    </script>
+
+    <!-- This code takes you back to the welcome page after you are inactive for 30 seconds. -->
+    <script>
+        var inactivityTime = function() {
+            var time;
+            window.onload = resetTimer;
+            // DOM Events
+            document.onkeypress = resetTimer;
+            document.onclick = resetTimer;
+            document.onmousedown = resetTimer;
+
+            function logout() {
+                showScreensaver()
             }
-    
-            // Update the online status icon based on connectivity
-            window.addEventListener('online', updateIndicator);
-            window.addEventListener('offline', updateIndicator);
-            updateIndicator();
-    
-        </script>
+
+            function resetTimer() {
+                clearTimeout(time);
+                time = setTimeout(logout, 60000)
+                    // 1000 milliseconds = 1 second
+            }
+        };
+    </script>
 
     <!-- SCRIPTS END -->
 
